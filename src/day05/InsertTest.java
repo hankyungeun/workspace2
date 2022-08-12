@@ -8,12 +8,14 @@ public class InsertTest {
 
     public static void main(String[] args) throws Exception{
         //1. 접속 -- Connection
-        Class.forName("com.mysql.cj.jdbc.Driver");
+        Class.forName("com.mysql.cj.jdbc.Driver");          //예외처리 해야 오류 안남
         String url="jdbc:mysql://127.0.0.1:3306/skudb";
         String user = "sku";
         String password = "0000";
 
         Connection conn = DriverManager.getConnection(url, user, password);
+
+
         //2. 쿼리작성 -- PreparedStatement
         String sql = "insert into member values(?,?,?,?,default)";
         PreparedStatement ps = conn.prepareStatement(sql);
@@ -24,12 +26,15 @@ public class InsertTest {
         ps.setString(4, "carami@carami.com");
 
 
-
         //3. 쿼리실행
-        int resultCount = ps.executeUpdate();
+        int resultCount = ps.executeUpdate();                   //실행해야 반영됨
+
+
         //4. 쿼리결과를 확인!!
         if(resultCount > 0 )
             System.out.println(resultCount+"건 입력 ^^");
+
+
         //5. 접속종료!!!! (반드시!!)
         if(ps != null)
             ps.close();

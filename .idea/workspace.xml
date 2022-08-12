@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d8810a5-50bb-4fa3-9535-a3d2137e84ab" name="변경" comment="hello삭제">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day05/ConnTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day05/InsertTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day05/SelectTest.java" afterDir="false" />
+    <list default="true" id="9d8810a5-50bb-4fa3-9535-a3d2137e84ab" name="변경" comment="day05 jdbc start">
+      <change afterPath="$PROJECT_DIR$/src/day05/DBUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day05/MemberDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day05/MemberDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day05/MemberDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javaExam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaExam.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/ConnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/ConnTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/InsertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/InsertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day05/SelectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/SelectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +39,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/sku/workspace/untitled/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "라이브러리",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.completion"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/sku/workspace/untitled/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;라이브러리&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\sku\workspace\untitled\src" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.SelectTest">
+  <component name="RunManager" selected="애플리케이션.MemberDAOTest">
     <configuration name="ConnTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day05.ConnTest" />
       <module name="javaExam" />
@@ -98,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PowerOfTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day01.PowerOfTwo" />
+    <configuration name="MemberDAOTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day05.MemberDAOTest" />
       <module name="javaExam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day01.*" />
+          <option name="PATTERN" value="day05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.SelectTest" />
+        <item itemvalue="애플리케이션.MemberDAOTest" />
         <item itemvalue="애플리케이션.InsertTest" />
+        <item itemvalue="애플리케이션.SelectTest" />
         <item itemvalue="애플리케이션.ConnTest" />
         <item itemvalue="애플리케이션.HelloWorld" />
-        <item itemvalue="애플리케이션.PowerOfTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +148,10 @@
       <workItem from="1660144355487" duration="184000" />
       <workItem from="1660259322914" duration="741000" />
       <workItem from="1660260110879" duration="2099000" />
-      <workItem from="1660279826350" duration="3898000" />
+      <workItem from="1660279826350" duration="5637000" />
+      <workItem from="1660286480448" duration="5577000" />
+      <workItem from="1660320084103" duration="340000" />
+      <workItem from="1660320513373" duration="3026000" />
     </task>
     <task id="LOCAL-00001" summary="hello삭제">
       <created>1660260385613</created>
@@ -154,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660260385614</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day05 jdbc start">
+      <created>1660283897415</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660283897415</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +186,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hello삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="hello삭제" />
+    <MESSAGE value="day05 jdbc start" />
+    <option name="LAST_COMMIT_MESSAGE" value="day05 jdbc start" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
