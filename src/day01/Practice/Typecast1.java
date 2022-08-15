@@ -1,4 +1,4 @@
-package day01;
+package day01.Practice;
 
 public class Typecast1 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package day01;
+package day01.Practice;
 
 import java.util.*; // Scanner 클래스를 사용하기 위함
 // Scanner 클래스와 System.in, nextInt() 메소드는 추후 다룰 것임

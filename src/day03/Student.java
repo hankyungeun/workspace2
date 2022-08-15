@@ -1,6 +1,6 @@
 package day03;
 
-import day02.Person;
+//import day02.Person;
 
 //class Person {
 //	int age;
@@ -12,17 +12,25 @@ import day02.Person;
 //	}
 //}
 
-public class Student extends Person  {
-	public void set() {
-//		age = 30;
-		name = "홍길동";
-		height = 175;
-//		setHeight(99);
-		setWeight(100);
+class Person {
+	public Person() {
+	System.out.println( "Person 클래스의 생성자가 호출 되었습니다.");
 	}
+}
+
+public class Student extends Person  {
+	public Student() {
+		System.out.println( "Student 클래스의 생성자가 호출 되었습니다.");
+	}
+//	public void set() {
+////		age = 30;
+//		name = "홍길동";
+//		height = 175;
+////		setHeight(99);
+//		setWeight(100);
 
 	public static void main(String[] args) {
-		Student s = new Student();
-		s.set();
+		Person s = new Student();
+//		s.set();
 	}
 }
